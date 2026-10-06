@@ -15,24 +15,17 @@ export default function ProximamentePage() {
         className="pointer-events-none absolute inset-0"
         style={{
           backgroundImage:
-            'radial-gradient(ellipse 60% 50% at 15% 20%, rgba(0,0,0,0.7) 0%, transparent 60%),' +
-            'radial-gradient(ellipse 50% 60% at 85% 15%, rgba(113,118,94,0.2) 0%, transparent 55%),' +
-            'radial-gradient(ellipse 70% 55% at 75% 85%, rgba(0,0,0,0.65) 0%, transparent 60%),' +
-            'radial-gradient(ellipse 55% 45% at 20% 90%, rgba(80,76,60,0.65) 0%, transparent 55%),' +
-            'radial-gradient(ellipse 40% 40% at 50% 50%, rgba(0,0,0,0.3) 0%, transparent 65%)',
+            'radial-gradient(ellipse 60% 50% at 15% 20%, rgba(0,0,0,0.55) 0%, transparent 60%),' +
+            'radial-gradient(ellipse 50% 60% at 85% 15%, rgba(113,118,94,0.15) 0%, transparent 55%),' +
+            'radial-gradient(ellipse 70% 55% at 75% 85%, rgba(0,0,0,0.5) 0%, transparent 60%),' +
+            'radial-gradient(ellipse 55% 45% at 20% 90%, rgba(70,67,54,0.55) 0%, transparent 55%)',
         }}
-      />
-
-      {/* Coarse grain: bigger pebble-like chunks underneath the fine grain */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22300%22%3E%3Cfilter%20id%3D%22c%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.12%22%20numOctaves%3D%224%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%201%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23c)%22%2F%3E%3C%2Fsvg%3E')] bg-[length:300px_300px] opacity-40 mix-blend-multiply"
       />
 
       {/* Fine grain: the granular stone texture, always visible, deepens on hover */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%201%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E')] opacity-60 mix-blend-overlay transition-opacity duration-700 ease-out group-hover:opacity-80"
+        className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.9%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E')] opacity-50 mix-blend-overlay transition-opacity duration-700 ease-out group-hover:opacity-70"
       />
 
       <Image
