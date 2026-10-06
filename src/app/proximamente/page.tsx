@@ -18,7 +18,7 @@ export default function ProximamentePage() {
         className="w-full max-w-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] md:max-w-lg"
       />
 
-      <p className="text-6xl font-light uppercase tracking-[0.4em] text-moss md:text-8xl">
+      <p className="text-7xl font-light uppercase tracking-[0.35em] text-moss md:text-9xl">
         Muy pronto
       </p>
     </div>
