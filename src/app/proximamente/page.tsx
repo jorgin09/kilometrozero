@@ -18,14 +18,9 @@ export default function ProximamentePage() {
         className="w-full max-w-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] md:max-w-lg"
       />
 
-      <div className="flex flex-col items-center gap-3">
-        <p className="max-w-md text-sm text-[#cfcabb] md:text-base">
-          Equipo técnico para trail running y montaña.
-        </p>
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-moss">
-          Muy pronto
-        </p>
-      </div>
+      <p className="text-4xl font-extrabold uppercase tracking-[0.3em] text-moss md:text-6xl">
+        Muy pronto
+      </p>
     </div>
   )
 }
