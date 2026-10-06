@@ -25,7 +25,7 @@ export default function ProximamentePage() {
       {/* Fine grain: the granular stone texture, always visible, deepens on hover */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.9%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E')] opacity-50 mix-blend-overlay transition-opacity duration-700 ease-out group-hover:opacity-70"
+        className="km0-grain pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.9%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E')] opacity-50 mix-blend-overlay transition-opacity duration-700 ease-out group-hover:opacity-70"
       />
 
       <Image
@@ -34,14 +34,14 @@ export default function ProximamentePage() {
         width={850}
         height={537}
         priority
-        className="h-auto w-full max-w-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] transition-[transform,box-shadow] duration-500 ease-out hover:scale-105 hover:shadow-[0_45px_90px_-15px_rgba(0,0,0,0.75)] md:max-w-lg"
+        className="km0-lockup h-auto w-full max-w-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] transition-[transform,box-shadow] duration-500 ease-out hover:scale-105 hover:shadow-[0_45px_90px_-15px_rgba(0,0,0,0.75)] md:max-w-lg"
       />
 
       <div className="flex flex-col items-center gap-4">
-        <p className="inline-block text-4xl font-light uppercase tracking-[0.25em] text-moss transition-[transform,filter] duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_25px_45px_rgba(0,0,0,0.6)] sm:text-5xl sm:tracking-[0.3em] md:text-6xl lg:text-8xl lg:tracking-[0.35em] xl:text-9xl">
+        <p className="km0-title inline-block text-4xl font-light uppercase tracking-[0.25em] text-moss transition-[transform,filter] duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_25px_45px_rgba(0,0,0,0.6)] sm:text-5xl sm:tracking-[0.3em] md:text-6xl lg:text-8xl lg:tracking-[0.35em] xl:text-9xl">
           Muy pronto
         </p>
-        <p className="inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#cfcabb] transition-[transform,filter] duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)]">
+        <p className="km0-sub inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#cfcabb] transition-[transform,filter] duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)]">
           Guatemala
         </p>
       </div>
