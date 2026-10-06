@@ -29,10 +29,10 @@ export default function ProximamentePage() {
       />
 
       <Image
-        src="/logo-km0.svg"
+        src="/logo-km0.png"
         alt="Kilómetro Zero — Adventure"
-        width={900}
-        height={560}
+        width={850}
+        height={537}
         priority
         className="km0-lockup h-auto w-full max-w-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] transition-[transform,box-shadow] duration-500 ease-out hover:scale-105 hover:shadow-[0_45px_90px_-15px_rgba(0,0,0,0.75)] md:max-w-lg"
       />
