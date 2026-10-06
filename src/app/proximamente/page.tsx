@@ -20,11 +20,11 @@ export default function ProximamentePage() {
         width={850}
         height={537}
         priority
-        className="w-full max-w-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] md:max-w-lg"
+        className="h-auto w-full max-w-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] transition-[transform,box-shadow] duration-500 ease-out hover:scale-105 hover:shadow-[0_45px_90px_-15px_rgba(0,0,0,0.75)] md:max-w-lg"
       />
 
       <div className="flex flex-col items-center gap-4">
-        <p className="text-7xl font-light uppercase tracking-[0.35em] text-moss md:text-9xl">
+        <p className="text-4xl font-light uppercase tracking-[0.25em] text-moss sm:text-5xl sm:tracking-[0.3em] md:text-6xl lg:text-8xl lg:tracking-[0.35em] xl:text-9xl">
           Muy pronto
         </p>
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#cfcabb]">
