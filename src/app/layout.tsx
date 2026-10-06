@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import { Archivo } from 'next/font/google'
-import { Header } from '@/components/layout/Header'
-import { Footer } from '@/components/layout/Footer'
 import './globals.css'
 
 const archivo = Archivo({
@@ -23,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={archivo.variable}>
       <body className="min-h-screen flex flex-col bg-white text-black antialiased">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   )
