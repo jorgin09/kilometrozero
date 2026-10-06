@@ -1,4 +1,4 @@
-# Tienda Trail Running
+# Kilómetro Zero
 
 E-commerce de equipo de trail running construido con Next.js (App Router),
 Supabase (base de datos, auth, storage) y Stripe (pagos).

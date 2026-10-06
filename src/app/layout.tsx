@@ -11,7 +11,7 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: 'Tienda Trail Running',
+  title: 'Kilómetro Zero',
   description: 'Equipo técnico para trail running y montaña',
 }
 
