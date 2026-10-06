@@ -24,10 +24,10 @@ export default function ProximamentePage() {
       />
 
       <div className="flex flex-col items-center gap-4">
-        <p className="text-4xl font-light uppercase tracking-[0.25em] text-moss sm:text-5xl sm:tracking-[0.3em] md:text-6xl lg:text-8xl lg:tracking-[0.35em] xl:text-9xl">
+        <p className="inline-block text-4xl font-light uppercase tracking-[0.25em] text-moss transition-[transform,filter] duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_25px_45px_rgba(0,0,0,0.6)] sm:text-5xl sm:tracking-[0.3em] md:text-6xl lg:text-8xl lg:tracking-[0.35em] xl:text-9xl">
           Muy pronto
         </p>
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#cfcabb]">
+        <p className="inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#cfcabb] transition-[transform,filter] duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)]">
           Guatemala
         </p>
       </div>
