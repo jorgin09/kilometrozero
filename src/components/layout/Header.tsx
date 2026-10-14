@@ -15,7 +15,7 @@ export function Header() {
       </div>
 
       <div className="border-b border-stone-200">
-        <div className="mx-auto max-w-7xl px-4 h-20 flex items-center justify-between">
+        <div className="mx-auto max-w-7xl px-4 h-24 flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
               src="/logo-km0-final.png"
@@ -23,7 +23,7 @@ export function Header() {
               width={803}
               height={423}
               priority
-              className="h-[66px] w-auto"
+              className="h-[79px] w-auto"
             />
           </Link>
 
