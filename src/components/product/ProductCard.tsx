@@ -28,7 +28,7 @@ export function ProductCard({ product }: { product: Product }) {
         )}
 
         {totalStock === 0 && (
-          <span className="absolute top-3 left-3 bg-black text-white text-[11px] font-semibold uppercase tracking-widest px-2 py-1">
+          <span className="absolute top-3 left-3 bg-ink text-paper text-[11px] font-semibold uppercase tracking-widest px-2 py-1">
             Agotado
           </span>
         )}
@@ -38,7 +38,7 @@ export function ProductCard({ product }: { product: Product }) {
         <p className="text-xs text-stone-500 uppercase tracking-widest">
           {product.brand}
         </p>
-        <h3 className="text-sm font-semibold text-black">{product.title}</h3>
+        <h3 className="text-sm font-semibold text-ink">{product.title}</h3>
         <p className="text-sm text-stone-600">Desde Q{minPrice.toFixed(2)}</p>
       </div>
     </Link>

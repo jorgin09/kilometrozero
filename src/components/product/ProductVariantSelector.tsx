@@ -38,13 +38,13 @@ export function ProductVariantSelector({ product }: { product: Product }) {
 
   return (
     <div className="mt-4 space-y-6">
-      <p className="text-2xl font-bold text-black">
+      <p className="text-2xl font-bold text-ink">
         Q{(variantSeleccionada?.price ?? product.base_price).toFixed(2)}
       </p>
 
       {colores.length > 0 && (
         <div>
-          <h3 className="text-xs font-semibold uppercase tracking-widest text-black mb-2">
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-ink mb-2">
             Color
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -54,7 +54,7 @@ export function ProductVariantSelector({ product }: { product: Product }) {
                 onClick={() => setColor(c)}
                 className={`px-3 py-1.5 text-sm border ${
                   color === c
-                    ? 'border-black bg-black text-white'
+                    ? 'border-moss bg-moss text-paper'
                     : 'border-stone-300 text-stone-700'
                 }`}
               >
@@ -67,7 +67,7 @@ export function ProductVariantSelector({ product }: { product: Product }) {
 
       {tallas.length > 0 && (
         <div>
-          <h3 className="text-xs font-semibold uppercase tracking-widest text-black mb-2">
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-ink mb-2">
             Talla
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -77,7 +77,7 @@ export function ProductVariantSelector({ product }: { product: Product }) {
                 onClick={() => setTalla(t)}
                 className={`h-10 w-10 text-sm border ${
                   talla === t
-                    ? 'border-black bg-black text-white'
+                    ? 'border-moss bg-moss text-paper'
                     : 'border-stone-300 text-stone-700'
                 }`}
               >
@@ -91,7 +91,7 @@ export function ProductVariantSelector({ product }: { product: Product }) {
       <button
         onClick={handleAddToCart}
         disabled={sinStock || loading}
-        className="w-full bg-black text-white py-4 text-xs font-semibold uppercase tracking-widest hover:bg-stone-800 disabled:bg-stone-300 disabled:cursor-not-allowed"
+        className="w-full bg-ink text-paper py-4 text-xs font-semibold uppercase tracking-widest hover:bg-moss-dark disabled:bg-stone-300 disabled:cursor-not-allowed"
       >
         {sinStock ? 'Agotado' : loading ? 'Agregando...' : 'Agregar al carrito'}
       </button>

@@ -36,7 +36,7 @@ export function CartDrawer() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="text-xs font-semibold uppercase tracking-widest text-black hover:text-stone-500"
+        className="text-xs font-semibold uppercase tracking-widest text-ink hover:text-stone-500"
       >
         Carrito ({items.reduce((n, i) => n + i.quantity, 0)})
       </button>
@@ -44,17 +44,17 @@ export function CartDrawer() {
       {open && (
         <div className="fixed inset-0 z-50 flex justify-end">
           <div
-            className="absolute inset-0 bg-black/30"
+            className="absolute inset-0 bg-ink/30"
             onClick={() => setOpen(false)}
           />
-          <div className="relative w-full max-w-md bg-white h-full p-6 overflow-y-auto">
+          <div className="relative w-full max-w-md bg-paper h-full p-6 overflow-y-auto">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-sm font-semibold uppercase tracking-widest text-black">
+              <h2 className="text-sm font-semibold uppercase tracking-widest text-ink">
                 Tu carrito
               </h2>
               <button
                 onClick={() => setOpen(false)}
-                className="text-xs font-semibold uppercase tracking-widest text-stone-500 hover:text-black"
+                className="text-xs font-semibold uppercase tracking-widest text-stone-500 hover:text-ink"
               >
                 Cerrar
               </button>
@@ -131,7 +131,7 @@ export function CartDrawer() {
                 <button
                   onClick={handleCheckout}
                   disabled={checkingOut}
-                  className="w-full bg-black text-white py-4 text-xs font-semibold uppercase tracking-widest hover:bg-stone-800 disabled:bg-stone-300"
+                  className="w-full bg-ink text-paper py-4 text-xs font-semibold uppercase tracking-widest hover:bg-moss-dark disabled:bg-stone-300"
                 >
                   {checkingOut ? 'Redirigiendo...' : 'Ir a pagar'}
                 </button>

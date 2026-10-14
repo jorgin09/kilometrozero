@@ -18,19 +18,19 @@ export function SearchBox() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="hidden items-center rounded-full border border-stone-300 pl-4 pr-1.5 py-1.5 focus-within:border-black lg:flex"
+      className="hidden items-center rounded-full border border-stone-300 pl-4 pr-1.5 py-1.5 focus-within:border-ink lg:flex"
     >
       <input
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Búsqueda"
-        className="w-32 bg-transparent text-sm text-black placeholder:text-stone-400 outline-none"
+        className="w-32 bg-transparent text-sm text-ink placeholder:text-stone-400 outline-none"
       />
       <button
         type="submit"
         aria-label="Buscar"
-        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-stone-500 hover:text-black"
+        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-stone-500 hover:text-ink"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -60,7 +60,7 @@ export default async function ProductosPage({
         {params.categoria === 'eventos' && <EventosIntro />}
 
         <div className="mb-10">
-          <h1 className="text-3xl font-extrabold uppercase tracking-tight text-black">
+          <h1 className="text-3xl font-extrabold uppercase tracking-tight text-ink">
             Equipo de trail running
           </h1>
           <p className="mt-1 text-sm text-stone-500">

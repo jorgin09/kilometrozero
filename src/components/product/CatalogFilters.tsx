@@ -26,7 +26,7 @@ export function CatalogFilters({ categories }: { categories: Category[] }) {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-xs font-semibold uppercase tracking-widest text-black mb-3">
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-ink mb-3">
           Categoría
         </h3>
         <div className="space-y-2">
@@ -41,8 +41,8 @@ export function CatalogFilters({ categories }: { categories: Category[] }) {
               }
               className={`block text-sm ${
                 categoriaActiva === cat.slug
-                  ? 'font-semibold text-black'
-                  : 'text-stone-500 hover:text-black'
+                  ? 'font-semibold text-moss'
+                  : 'text-stone-500 hover:text-ink'
               }`}
             >
               {cat.name}
@@ -52,7 +52,7 @@ export function CatalogFilters({ categories }: { categories: Category[] }) {
       </div>
 
       <div>
-        <h3 className="text-xs font-semibold uppercase tracking-widest text-black mb-3">
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-ink mb-3">
           Talla
         </h3>
         <div className="flex flex-wrap gap-2">
@@ -64,8 +64,8 @@ export function CatalogFilters({ categories }: { categories: Category[] }) {
               }
               className={`h-8 w-8 text-xs border ${
                 tallaActiva === talla
-                  ? 'border-black bg-black text-white'
-                  : 'border-stone-300 text-stone-700 hover:border-black'
+                  ? 'border-moss bg-moss text-paper'
+                  : 'border-stone-300 text-stone-700 hover:border-ink'
               }`}
             >
               {talla}

@@ -32,19 +32,19 @@ export default function HomePage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-ink/30" />
 
         <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 pb-20 md:px-16">
-          <h1 className="max-w-2xl text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-white md:text-7xl">
+          <h1 className="max-w-2xl text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-paper md:text-7xl">
             Eventos
           </h1>
-          <p className="mt-4 max-w-md text-sm text-white/80 md:text-base">
+          <p className="mt-4 max-w-md text-sm text-paper/80 md:text-base">
             Carreras, ultras y clínicas de entrenamiento para vivir el trail
             al máximo.
           </p>
           <Link
             href="/productos?categoria=eventos"
-            className="mt-8 inline-block border-2 border-white px-8 py-4 text-xs font-semibold uppercase tracking-widest text-white hover:bg-white hover:text-black"
+            className="mt-8 inline-block border-2 border-paper px-8 py-4 text-xs font-semibold uppercase tracking-widest text-paper hover:bg-paper hover:text-ink"
           >
             Eventos
           </Link>
@@ -60,19 +60,19 @@ export default function HomePage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-ink/40" />
 
         <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 pb-20 md:px-16">
-          <h2 className="max-w-2xl text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-white md:text-7xl">
+          <h2 className="max-w-2xl text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-paper md:text-7xl">
             Tienda
           </h2>
-          <p className="mt-4 max-w-md text-sm text-white/80 md:text-base">
+          <p className="mt-4 max-w-md text-sm text-paper/80 md:text-base">
             Materiales técnicos, transpirables y resistentes, probados en
             montaña.
           </p>
           <Link
             href="/productos"
-            className="mt-8 inline-block border-2 border-white px-8 py-4 text-xs font-semibold uppercase tracking-widest text-white hover:bg-white hover:text-black"
+            className="mt-8 inline-block border-2 border-paper px-8 py-4 text-xs font-semibold uppercase tracking-widest text-paper hover:bg-paper hover:text-ink"
           >
             Ver catálogo
           </Link>
@@ -81,7 +81,7 @@ export default function HomePage() {
 
       {/* Categorías */}
       <section className="mx-auto max-w-7xl px-4 py-20">
-        <h2 className="text-center text-2xl font-extrabold uppercase tracking-tight text-black md:text-3xl">
+        <h2 className="text-center text-2xl font-extrabold uppercase tracking-tight text-ink md:text-3xl">
           Comprá por categoría
         </h2>
 
@@ -99,9 +99,9 @@ export default function HomePage() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 bg-black/20 transition-colors group-hover:bg-black/35" />
+              <div className="absolute inset-0 bg-ink/20 transition-colors group-hover:bg-ink/35" />
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <span className="inline-block border-b-2 border-white pb-1 text-lg font-bold uppercase tracking-wide text-white">
+                <span className="inline-block border-b-2 border-paper pb-1 text-lg font-bold uppercase tracking-wide text-paper">
                   {cat.label}
                 </span>
               </div>

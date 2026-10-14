@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={archivo.variable}>
-      <body className="min-h-screen flex flex-col bg-white text-black antialiased">
+      <body className="min-h-screen flex flex-col bg-paper text-ink antialiased">
         {children}
       </body>
     </html>

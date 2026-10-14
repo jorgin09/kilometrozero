@@ -1,9 +1,9 @@
 export function Footer() {
   return (
-    <footer className="border-t border-stone-200 mt-24 bg-white">
+    <footer className="border-t border-stone-200 mt-24 bg-paper">
       <div className="mx-auto max-w-7xl px-4 py-16 grid grid-cols-1 gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-black">
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-ink">
             Mantente al día
           </h3>
           <p className="mt-3 text-sm text-stone-500 max-w-xs">
@@ -18,7 +18,7 @@ export function Footer() {
             />
             <button
               type="submit"
-              className="shrink-0 bg-black px-5 text-xs font-semibold uppercase tracking-widest text-white hover:bg-stone-800"
+              className="shrink-0 bg-ink px-5 text-xs font-semibold uppercase tracking-widest text-paper hover:bg-moss-dark"
             >
               Enviar
             </button>
@@ -26,34 +26,34 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-black">
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-ink">
             Tienda
           </h3>
           <div className="mt-4 flex flex-col gap-2 text-sm text-stone-500">
-            <a href="/productos?categoria=camisetas" className="hover:text-black">
+            <a href="/productos?categoria=camisetas" className="hover:text-ink">
               Camisetas
             </a>
-            <a href="/productos?categoria=calzado" className="hover:text-black">
+            <a href="/productos?categoria=calzado" className="hover:text-ink">
               Calzado
             </a>
-            <a href="/productos?categoria=accesorios" className="hover:text-black">
+            <a href="/productos?categoria=accesorios" className="hover:text-ink">
               Accesorios
             </a>
           </div>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-black">
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-ink">
             Ayuda
           </h3>
           <div className="mt-4 flex flex-col gap-2 text-sm text-stone-500">
-            <a href="#" className="hover:text-black">
+            <a href="#" className="hover:text-ink">
               Envíos
             </a>
-            <a href="#" className="hover:text-black">
+            <a href="#" className="hover:text-ink">
               Devoluciones
             </a>
-            <a href="#" className="hover:text-black">
+            <a href="#" className="hover:text-ink">
               Contacto
             </a>
           </div>

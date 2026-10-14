@@ -1,28 +1,33 @@
 import { Suspense } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { CartDrawer } from '@/components/cart/CartDrawer'
 import { SearchBox } from '@/components/layout/SearchBox'
 
 const NAV_LINK_CLASS =
-  'relative py-2 hover:text-stone-500 before:absolute before:-top-2 before:left-0 before:h-0.5 before:w-full before:origin-center before:scale-x-0 before:bg-blue-600 before:transition-transform before:duration-200 hover:before:scale-x-100'
+  'relative py-2 hover:text-stone-500 before:absolute before:-top-2 before:left-0 before:h-0.5 before:w-full before:origin-center before:scale-x-0 before:bg-moss before:transition-transform before:duration-200 hover:before:scale-x-100'
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-white">
-      <div className="bg-black text-white text-center text-[11px] font-medium uppercase tracking-widest py-2">
+    <header className="sticky top-0 z-40 bg-paper">
+      <div className="bg-ink text-paper text-center text-[11px] font-medium uppercase tracking-widest py-2">
         Envío gratis en compras mayores a Q500
       </div>
 
       <div className="border-b border-stone-200">
         <div className="mx-auto max-w-7xl px-4 h-20 flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-2xl font-extrabold uppercase tracking-tight"
-          >
-            Kilómetro Zero
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo-km0-final.png"
+              alt="Kilómetro Zero — Adventure"
+              width={803}
+              height={423}
+              priority
+              className="h-11 w-auto"
+            />
           </Link>
 
-          <nav className="hidden md:flex gap-8 text-xs font-semibold uppercase tracking-widest text-black">
+          <nav className="hidden md:flex gap-8 text-xs font-semibold uppercase tracking-widest text-ink">
             <Link href="/productos?categoria=eventos" className={NAV_LINK_CLASS}>
               Eventos
             </Link>

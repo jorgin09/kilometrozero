@@ -53,12 +53,12 @@ function Tramo({
   return (
     <div className="border-t border-stone-200 py-10">
       <div className="flex flex-wrap items-baseline gap-3">
-        <span className="rounded bg-blue-50 px-2 py-0.5 text-[11px] font-semibold text-blue-700">
+        <span className="rounded bg-moss/10 px-2 py-0.5 text-[11px] font-semibold text-moss-dark">
           {numero}
         </span>
         <span className="ml-auto text-xs text-stone-400">{marcador}</span>
       </div>
-      <h3 className="mt-2 text-xl font-extrabold uppercase tracking-tight text-black md:text-2xl">
+      <h3 className="mt-2 text-xl font-extrabold uppercase tracking-tight text-ink md:text-2xl">
         {titulo}
       </h3>
       <div className="mt-4 space-y-4 text-sm leading-relaxed text-stone-600">
@@ -87,12 +87,12 @@ export function EventosIntro() {
   return (
     <section className="mb-14 border-b border-stone-200 pb-4">
       <div className="flex items-center gap-2">
-        <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
+        <span className="h-1.5 w-1.5 rounded-full bg-moss" />
         <span className="text-xs font-semibold uppercase tracking-widest text-stone-500">
           Kilómetro Zero · Propuesta de producto
         </span>
       </div>
-      <h2 className="mt-3 text-3xl font-extrabold uppercase tracking-tight text-black md:text-5xl">
+      <h2 className="mt-3 text-3xl font-extrabold uppercase tracking-tight text-ink md:text-5xl">
         Carreras y Retos Virtuales
       </h2>
       <p className="mt-4 max-w-2xl text-sm text-stone-600 md:text-base">
@@ -103,12 +103,12 @@ export function EventosIntro() {
 
       <Tramo numero="TRAMO 01" titulo="Mecánica del reto" marcador="5K · 10K · 21K · acumulativos">
         <p>
-          <strong className="text-black">Un solo intento (contra el reloj):</strong> el corredor
+          <strong className="text-ink">Un solo intento (contra el reloj):</strong> el corredor
           elige 5K, 10K o 21K, tiene una ventana de inscripción a evento (ej. 01–31 oct 2026)
           y sube una actividad calificante, cronometrada por chip GPS del reloj/app.
         </p>
         <p>
-          <strong className="text-black">Acumulativos (distancia o D+):</strong> el corredor suma
+          <strong className="text-ink">Acumulativos (distancia o D+):</strong> el corredor suma
           kilómetros o desnivel positivo de varias actividades hasta completar una ruta real
           tematizada con los volcanes de Guatemala.
         </p>
@@ -125,7 +125,7 @@ export function EventosIntro() {
             <tbody>
               {RUTAS.map((r) => (
                 <tr key={r.reto}>
-                  <td className="border-b border-stone-100 py-2 pr-4 text-black">{r.reto}</td>
+                  <td className="border-b border-stone-100 py-2 pr-4 text-ink">{r.reto}</td>
                   <td className="border-b border-stone-100 py-2 pr-4">{r.distancia}</td>
                   <td className="border-b border-stone-100 py-2 pr-4">{r.dplus}</td>
                   <td className="border-b border-stone-100 py-2">{r.ventana}</td>
@@ -135,12 +135,12 @@ export function EventosIntro() {
           </table>
         </div>
         <p>
-          <strong className="text-black">Mapa de progreso:</strong> cada kilómetro validado
+          <strong className="text-ink">Mapa de progreso:</strong> cada kilómetro validado
           avanza un marcador sobre la polilínea real de la ruta. Al llegar a un punto de
           interés se dispara una insignia y una postal descargable de esa parada.
         </p>
         <p>
-          <strong className="text-black">Gamificación:</strong> medalla 3D (rotable al
+          <strong className="text-ink">Gamificación:</strong> medalla 3D (rotable al
           desbloquear), dorsal digital con nombre y número, e insignias por hito (10K, 1,000 m
           D+ acumulados, racha de 7 días).
         </p>
@@ -159,7 +159,7 @@ export function EventosIntro() {
             <tbody>
               {PROVEEDORES.map((p) => (
                 <tr key={p.nombre}>
-                  <td className="border-b border-stone-100 py-2 pr-4 text-black">{p.nombre}</td>
+                  <td className="border-b border-stone-100 py-2 pr-4 text-ink">{p.nombre}</td>
                   <td className="border-b border-stone-100 py-2 pr-4">{p.via}</td>
                   <td className="border-b border-stone-100 py-2">{p.nota}</td>
                 </tr>
@@ -182,7 +182,7 @@ export function EventosIntro() {
             <tbody>
               {KITS.map((k) => (
                 <tr key={k.modalidad}>
-                  <td className="border-b border-stone-100 py-2 pr-4 text-black">{k.modalidad}</td>
+                  <td className="border-b border-stone-100 py-2 pr-4 text-ink">{k.modalidad}</td>
                   <td className="border-b border-stone-100 py-2 pr-4">{k.incluye}</td>
                   <td className="border-b border-stone-100 py-2">{k.precio}</td>
                 </tr>
@@ -191,13 +191,13 @@ export function EventosIntro() {
           </table>
         </div>
         <p>
-          <strong className="text-black">Flujo de cumplimiento:</strong> corte de inscripción →
+          <strong className="text-ink">Flujo de cumplimiento:</strong> corte de inscripción →
           producción consolidada de medallas 15 días después del cierre (para bajar costo
           unitario de fundición) → empaque y guía automática con el courier local → número de
           tracking por correo → SLA de entrega: 10 días hábiles.
         </p>
-        <p className="border-l-2 border-blue-600 pl-3">
-          <strong className="text-black">Nota de margen:</strong> el kit físico necesita
+        <p className="border-l-2 border-moss pl-3">
+          <strong className="text-ink">Nota de margen:</strong> el kit físico necesita
           mantener ≥35% de margen después de medalla + envío. Con MOQ de 150 medallas por
           corrida de fundición, el costo unitario baja de forma que el diferencial entre
           modalidades sigue siendo rentable.
@@ -217,7 +217,7 @@ export function EventosIntro() {
             <tbody>
               {PRECIOS.map((p) => (
                 <tr key={p.producto}>
-                  <td className="border-b border-stone-100 py-2 pr-4 text-black">{p.producto}</td>
+                  <td className="border-b border-stone-100 py-2 pr-4 text-ink">{p.producto}</td>
                   <td className="border-b border-stone-100 py-2 pr-4">{p.cobertura}</td>
                   <td className="border-b border-stone-100 py-2">{p.precio}</td>
                 </tr>
@@ -230,7 +230,7 @@ export function EventosIntro() {
           los cuatro retos, y fija el flujo de caja del trimestre.
         </p>
         <p>
-          <strong className="text-black">Automatizaciones al cruzar la meta virtual:</strong>
+          <strong className="text-ink">Automatizaciones al cruzar la meta virtual:</strong>
         </p>
         <ul className="list-disc space-y-1.5 pl-5">
           {RETENCION.map((item) => (

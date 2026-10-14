@@ -49,7 +49,7 @@ export default async function ProductoPage({
           <p className="text-xs text-stone-500 uppercase tracking-widest">
             {product.brand}
           </p>
-          <h1 className="mt-1 text-3xl font-extrabold uppercase tracking-tight text-black">
+          <h1 className="mt-1 text-3xl font-extrabold uppercase tracking-tight text-ink">
             {product.title}
           </h1>
 
@@ -57,7 +57,7 @@ export default async function ProductoPage({
 
           {product.description && (
             <div className="mt-8 border-t border-stone-200 pt-6">
-              <h2 className="text-xs font-semibold uppercase tracking-widest text-black mb-2">
+              <h2 className="text-xs font-semibold uppercase tracking-widest text-ink mb-2">
                 Descripción
               </h2>
               <p className="text-sm text-stone-600 leading-relaxed">
