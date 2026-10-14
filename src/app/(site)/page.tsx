@@ -33,6 +33,10 @@ export default function HomePage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-ink/30" />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.9%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E')] opacity-20 mix-blend-overlay"
+        />
 
         <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 pb-20 md:px-16">
           <h1 className="max-w-2xl text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-paper md:text-7xl">
@@ -61,6 +65,10 @@ export default function HomePage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-ink/40" />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.9%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.9%200%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%2F%3E%3C%2Fsvg%3E')] opacity-20 mix-blend-overlay"
+        />
 
         <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 pb-20 md:px-16">
           <h2 className="max-w-2xl text-5xl font-extrabold uppercase leading-[1.05] tracking-tight text-paper md:text-7xl">
